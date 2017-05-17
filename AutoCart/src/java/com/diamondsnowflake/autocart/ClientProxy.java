@@ -1,11 +1,11 @@
 package com.diamondsnowflake.autocart;
 
-import com.diamondsnowflake.autocart.client.render.blocks.BlockRenderRegister;
-import com.diamondsnowflake.autocart.client.render.items.ItemRenderRegister;
-
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import com.diamondsnowflake.autocart.client.render.blocks.BlockRenderRegister;
+import com.diamondsnowflake.autocart.client.render.items.ItemRenderRegister;
 
 public class ClientProxy extends CommonProxy {
 

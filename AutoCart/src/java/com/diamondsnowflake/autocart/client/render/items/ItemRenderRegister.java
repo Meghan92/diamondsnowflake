@@ -1,11 +1,10 @@
 package com.diamondsnowflake.autocart.client.render.items;
 
-import com.diamondsnowflake.autocart.Main;
-import com.diamondsnowflake.autocart.items.ModItems;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import com.diamondsnowflake.autocart.items.ModItems;
+import com.diamondsnowflake.autocart.Main;
 
 public final class ItemRenderRegister {
 	

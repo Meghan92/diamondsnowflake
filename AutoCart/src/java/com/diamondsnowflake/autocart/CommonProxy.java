@@ -2,7 +2,6 @@ package com.diamondsnowflake.autocart;
 
 import com.diamondsnowflake.autocart.blocks.ModBlocks;
 import com.diamondsnowflake.autocart.items.ModItems;
-
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
