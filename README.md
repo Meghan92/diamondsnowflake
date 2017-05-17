@@ -25,5 +25,4 @@ This branch is used for the version specific mod development.
 
 | Item  | Description  |
 |---|---|
-| mod/1.11.2  | Publicly accessible branch of your mod  | 
-| mod  | Name of your mod, branched off master, all lowercase  |
+| mod | Publicly accessible branch of your mod and the name of your mod, branched off master, all lowercase  | 
