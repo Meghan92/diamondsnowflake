@@ -8,9 +8,11 @@ import com.diamondsnowflake.autocart.items.ModItems;
 public final class ItemRenderRegister {	
 
 	public static void registerItemRenderer() {
-		ModItems.items.forEach((item)->{
-			register(item);
-		});	    
+		if (ModItems.items != null && !ModItems.items.isEmpty()){
+			ModItems.items.forEach((item)->{
+				register(item);
+			});	
+		}		    
 	}
 
 	public static void register(Item item) {

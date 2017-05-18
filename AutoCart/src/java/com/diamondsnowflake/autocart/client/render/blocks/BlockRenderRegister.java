@@ -10,9 +10,12 @@ import net.minecraft.item.Item;
 public final class BlockRenderRegister {
 	
 	public static void registerBlockRenderer() {
-		ModBlocks.blocks.forEach((block)->{
-			register(block);
-		});
+		if (ModBlocks.blocks != null && !ModBlocks.blocks.isEmpty()){
+			ModBlocks.blocks.forEach((block)->{
+				register(block);
+			});
+		}
+		
     }
 	
 	public static void register(Block block){
