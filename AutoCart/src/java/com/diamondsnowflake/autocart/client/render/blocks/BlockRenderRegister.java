@@ -1,6 +1,5 @@
 package com.diamondsnowflake.autocart.client.render.blocks;
 
-import com.diamondsnowflake.autocart.Main;
 import com.diamondsnowflake.autocart.blocks.ModBlocks;
 
 import net.minecraft.block.Block;
@@ -10,19 +9,19 @@ import net.minecraft.item.Item;
 
 public final class BlockRenderRegister {
 	
-	public static String modid = Main.MODID;
-	
 	public static void registerBlockRenderer() {
-		register(ModBlocks.tutorialBlock);
+		ModBlocks.blocks.forEach((block)->{
+			register(block);
+		});
     }
 	
 	public static void register(Block block){
-		String blockName = block.getUnlocalizedName().substring(5);
+		String blockName = block.getRegistryName().toString();
 		Minecraft
 		.getMinecraft()
 		.getRenderItem()
 		.getItemModelMesher()
 	    .register(Item.getItemFromBlock(block) , 0, 
-	    		new ModelResourceLocation(modid + ":" + blockName, "inventory"));
+	    		new ModelResourceLocation(blockName, "inventory"));
 	}
 }

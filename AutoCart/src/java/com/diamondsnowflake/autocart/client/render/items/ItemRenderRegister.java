@@ -4,24 +4,22 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import com.diamondsnowflake.autocart.items.ModItems;
-import com.diamondsnowflake.autocart.Main;
 
-public final class ItemRenderRegister {
-	
-	public static String modid = Main.MODID;
-	
+public final class ItemRenderRegister {	
 
 	public static void registerItemRenderer() {
-	    register(ModItems.tutorialItem);
+		ModItems.items.forEach((item)->{
+			register(item);
+		});	    
 	}
 
 	public static void register(Item item) {
-		String shortenedName = item.getUnlocalizedName().substring(5);
+		String itemName = item.getRegistryName().toString();
 	    Minecraft
 	    .getMinecraft()
 	    .getRenderItem()
 	    .getItemModelMesher()
 	    .register(item, 0, 
-	    		new ModelResourceLocation(modid + ":" + shortenedName, "inventory"));
+	    		new ModelResourceLocation(itemName, "inventory"));
 	}
 }
