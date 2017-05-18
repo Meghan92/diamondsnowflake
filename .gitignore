@@ -25,3 +25,7 @@ Forge/
 .recommenders
 **/bin/
 .settings/
+
+#Gradle
+**/.gradle/
+**/build/
