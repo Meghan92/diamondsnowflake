@@ -8,6 +8,10 @@ The branching strategy follows the setup indicated below.
 
 Publicly accessible, tested code.
 
+### develop
+
+Development environment, mods can be added here. It is to avoid development on master.
+
 ### release/ddmmyy
 
 This branch is used for merging multiple branches that are ready for public access into the corresponding master branch. It is used for integration testing of multiple mods.
