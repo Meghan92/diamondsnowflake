@@ -10,6 +10,12 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
+sourceSets {
+    main {
+        java { srcDirs = ["src/java"] }
+        resources { srcDirs = ["src/resources"] }
+    }
+}
 
 version = "1.0"
 group = "com.diamondsnowflake.tutorial" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
